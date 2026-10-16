@@ -1,0 +1,20 @@
+public class j20_ArrayPrimitivo_Metodos {
+    public static void main(String[] args) {
+        int[] calificaciones = new int[4];
+
+        calificaciones[0] = 85;
+        calificaciones[1] = 90;
+        calificaciones[2] = 78;
+        calificaciones[3] = 92;
+
+        int primeraNota = calificaciones[0];
+        int segundaNota = calificaciones[1];
+
+        calificaciones[1] = 95;
+
+        calificaciones[0] = 0;
+
+        System.out.println("Longitud total del array: " + calificaciones.length);
+        System.out.println("Contenido final: [" + calificaciones[0] + ", " + calificaciones[1] + ", " + calificaciones[2] + ", " + calificaciones[3] + "]");
+    }
+}
