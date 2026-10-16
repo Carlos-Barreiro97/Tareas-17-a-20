@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+public class j19_ArrayList_Precios {
+    public static void main(String[] args) {
+    
+        ArrayList<Double> precios = new ArrayList<>();
+
+        precios.add(199.99);
+        precios.add(49.50);
+        precios.add(1200.00);
+        precios.add(15.75);
+
+        System.out.println("--- Registro de precios ---");
+        // Recorrido sencillo usando for-each
+        for (Double precio : precios) {
+            if (precio >= 100.0) {
+                System.out.println("Precio $" + precio + ": Es un producto costoso");
+            } else {
+                System.out.println("Precio $" + precio + ": Es un producto económico");
+            }
+        }
+    }
+}
